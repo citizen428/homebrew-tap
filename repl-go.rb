@@ -5,21 +5,21 @@
 class ReplGo < Formula
   desc "Add more read-eval-print-love in your life"
   homepage "https://github.com/citizen428/repl"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/citizen428/repl/releases/download/v1.0.1/repl_1.0.1_macOS_arm64.tar.gz"
-      sha256 "65a3b7acb109018f26bce2b0ac18fc40ed20231378066d8631e01fdd8e202fc3"
+      url "https://github.com/citizen428/repl/releases/download/v1.0.2/repl_1.0.2_macOS_arm64.tar.gz"
+      sha256 "d201af87bea73371e9f3793aa85b1fca0d350c417aa344aa71e94704a75c567e"
 
       def install
         bin.install "repl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/citizen428/repl/releases/download/v1.0.1/repl_1.0.1_macOS_x86_64.tar.gz"
-      sha256 "de673d2403b4586775cb6ef49adc22635190a33cd79bbf9a2950199d94d5f960"
+      url "https://github.com/citizen428/repl/releases/download/v1.0.2/repl_1.0.2_macOS_x86_64.tar.gz"
+      sha256 "951a0593ec6d706fc27b4235fed0c8d7fd64bf0d5770516eaafc5c5a7e0b8d4a"
 
       def install
         bin.install "repl"
@@ -29,16 +29,16 @@ class ReplGo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/citizen428/repl/releases/download/v1.0.1/repl_1.0.1_Linux_arm64.tar.gz"
-      sha256 "b0f29cf9eacb9204f6c7b506dc2c5e3df5d34437031ae2d86dc5bcda14bb1151"
+      url "https://github.com/citizen428/repl/releases/download/v1.0.2/repl_1.0.2_Linux_arm64.tar.gz"
+      sha256 "f78c5e3cb4fdc059e6af74c470899717b836ad97a5b46717389993266313ed40"
 
       def install
         bin.install "repl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/citizen428/repl/releases/download/v1.0.1/repl_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "d454deaed1bd191a0e42447d622ddf0a45a2b4aef4cb87620aaea0928d03707e"
+      url "https://github.com/citizen428/repl/releases/download/v1.0.2/repl_1.0.2_Linux_x86_64.tar.gz"
+      sha256 "0e3fb64e8f02743bcec25b4f61cf53ac4f97760165837dd8a429647e7cb4bbd7"
 
       def install
         bin.install "repl"
